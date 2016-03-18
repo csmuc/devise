@@ -277,6 +277,9 @@ module Devise
   mattr_accessor :token_generator
   @@token_generator = nil
 
+  mattr_accessor :load_routes_before_eager_load
+  @@load_routes_before_eager_load = true
+
   # Default way to setup Devise. Run rails generate devise_install to create
   # a fresh initializer with all configuration values.
   def self.setup
